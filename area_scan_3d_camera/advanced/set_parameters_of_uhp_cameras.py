@@ -1,4 +1,7 @@
 # With this sample, you can set the parameters specific to the UHP series.
+# 通过此示例，您可以设置特定于UHP系列的参数。
+#
+# 这段代码的主要目的是设置特定于 UHP 系列相机的参数，具体是设置相机的捕获模式为 "Merge" 模式。
 
 from mecheye.shared import *
 from mecheye.area_scan_3d_camera import *

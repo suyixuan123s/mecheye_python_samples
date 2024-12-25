@@ -62,40 +62,40 @@ if __name__ == '__main__':
     a = ConnectAndCaptureImages()
     a.main()
 
-'''
-D:\Anaconda3\envs\Mech-Eye\python.exe G:\mecheye_python_samples\area_scan_3d_camera\basic\connect_and_capture_images.py 
-Find Mech-Eye Industrial 3D Cameras...
-Mech-Eye device index : 0
-.............................
-Camera Model Name:           Mech-Eye PRO M
-Camera Serial Number:        NEM12238A4130015
-Camera IP Address:           169.254.7.42
-Camera Subnet Mask:          255.255.0.0
-Camera IP Assignment Method: LLA
-Hardware Version:            V4.1.0
-Firmware Version:            V2.4.0
-.............................
-
-Please enter the device index you want to connect: 
-0
-Connect Mech-Eye Industrial 3D Camera Successfully.
-Texture Map size : (width : 1920, height : 1200).
-Depth Map size : (width : 1920, height: 1200).
-The size of the 2D image is 1920 (width) * 1200 (height).
-The RGB values of the pixel at (222,222) is R:58,G:58,B58
-
-Do you want the camera to capture 3D image ? Please input y/n to confirm: 
-y
-The size of the depth map is 1920 (width) * 1200 (height).
-The depth value of the pixel at (222,222) is depth :1230.2919921875mm
-
-The size of the point cloud is 1920 (width) * 1200 (height).
-The coordinates of the point corresponding to the pixel at (222,222) is X: -374.20965576171875mm , Y: -208.33644104003906mm, Z: 1230.2919921875mm
-
-Disconnected from the camera successfully.
-
-Process finished with exit code 0
-
-
-
-'''
+# '''
+# D:\Anaconda3\envs\Mech-Eye\python.exe G:\mecheye_python_samples\area_scan_3d_camera\basic\connect_and_capture_images.py
+# Find Mech-Eye Industrial 3D Cameras...
+# Mech-Eye device index : 0
+# .............................
+# Camera Model Name:           Mech-Eye PRO M
+# Camera Serial Number:        NEM12238A4130015
+# Camera IP Address:           169.254.7.42
+# Camera Subnet Mask:          255.255.0.0
+# Camera IP Assignment Method: LLA
+# Hardware Version:            V4.1.0
+# Firmware Version:            V2.4.0
+# .............................
+#
+# Please enter the device index you want to connect:
+# 0
+# Connect Mech-Eye Industrial 3D Camera Successfully.
+# Texture Map size : (width : 1920, height : 1200).
+# Depth Map size : (width : 1920, height: 1200).
+# The size of the 2D image is 1920 (width) * 1200 (height).
+# The RGB values of the pixel at (222,222) is R:58,G:58,B58
+#
+# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# y
+# The size of the depth map is 1920 (width) * 1200 (height).
+# The depth value of the pixel at (222,222) is depth :1230.2919921875mm
+#
+# The size of the point cloud is 1920 (width) * 1200 (height).
+# The coordinates of the point corresponding to the pixel at (222,222) is X: -374.20965576171875mm , Y: -208.33644104003906mm, Z: 1230.2919921875mm
+#
+# Disconnected from the camera successfully.
+#
+# Process finished with exit code 0
+#
+#
+#
+# '''

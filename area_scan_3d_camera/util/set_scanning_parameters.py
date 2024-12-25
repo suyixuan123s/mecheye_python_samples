@@ -1,4 +1,5 @@
 # With this sample, you can set the parameters in the "3D Parameters", "2D Parameters", and "ROI" categories.
+# 通过此示例，您可以设置“3D参数”、“2D参数”和“ROI”类别中的参数。
 
 from mecheye.shared import *
 from mecheye.area_scan_3d_camera import *
@@ -23,23 +24,23 @@ class SetScanningParameters(object):
         print("\ncurrent_user_set: " + user_set_name)
 
         # Set the exposure times for acquiring depth information.
-        error = current_user_set.set_float_array_value(
-            Scanning3DExposureSequence.name, [5])
-        # error = current_user_set.set_float_array_value(
-        #     Scanning3DExposureSequence.name, [5, 10])
+        error = current_user_set.set_float_array_value(Scanning3DExposureSequence.name, [5])
+        # error = current_user_set.set_float_array_value(Scanning3DExposureSequence.name, [5, 10])
         show_error(error)
-        error, exposure_sequence = current_user_set.get_float_array_value(
-            Scanning3DExposureSequence.name)
+
+        # 获取并显示 3D 扫描曝光序列的当前设置。它通过相机的用户设置（current_user_set）来获取曝光序列的值，并打印每个曝光时间。
+        error, exposure_sequence = current_user_set.get_float_array_value(Scanning3DExposureSequence.name)
         show_error(error)
-        print("\nThe 3D scanning exposure multiplier: {}".format(
-            len(exposure_sequence)))
+        print("\nThe 3D scanning exposure multiplier: {}".format(len(exposure_sequence)))
         for i in exposure_sequence:
             print("3D scanning exposure time: {}".format(i))
+
 
         # Set the ROI for the depth map and point cloud, and then obtain the parameter values for checking.
         roi = ROI(0, 0, 500, 500)
         error = current_user_set.set_roi_value(Scanning3DROI.name, roi)
         show_error(error)
+
         error, roi = current_user_set.get_roi_value(Scanning3DROI.name)
         show_error(error)
         print("\n3D scanning ROI topLeftX: {}, topLeftY: {}, width: {}, height: {}".
@@ -128,3 +129,51 @@ class SetScanningParameters(object):
 if __name__ == '__main__':
     a = SetScanningParameters()
     a.main()
+
+#
+# '''
+# D:\Anaconda3\envs\Mech-Eye\python.exe G:\mecheye_python_samples\area_scan_3d_camera\util\set_scanning_parameters.py
+# Find Mech-Eye Industrial 3D Cameras...
+# Mech-Eye device index : 0
+# .............................
+# Camera Model Name:           Mech-Eye PRO M
+# Camera Serial Number:        NEM12238A4130015
+# Camera IP Address:           169.254.7.42
+# Camera Subnet Mask:          255.255.0.0
+# Camera IP Assignment Method: LLA
+# Hardware Version:            V4.1.0
+# Firmware Version:            V2.4.0
+# .............................
+#
+# Please enter the device index you want to connect:
+# 0
+# Connect Mech-Eye Industrial 3D Camera Successfully.
+# .............................
+# Camera Model Name:           Mech-Eye PRO M
+# Camera Serial Number:        NEM12238A4130015
+# Camera IP Address:           169.254.7.42
+# Camera Subnet Mask:          255.255.0.0
+# Camera IP Assignment Method: LLA
+# Hardware Version:            V4.1.0
+# Firmware Version:            V2.4.0
+# .............................
+#
+#
+# current_user_set: NewUserSet
+#
+# The 3D scanning exposure multiplier: 1
+# 3D scanning exposure time: 5.0
+#
+# 3D scanning ROI topLeftX: 0, topLeftY: 0, width: 500, height: 500
+# Error Code : -5, Error Description: Parameter not found, please check the input parameter name.
+#
+# 2D scanning exposure mode enum: Timed, exposure time: 100.0
+#
+# Save the current parameter settings to the selected user set.
+# Disconnected from the camera successfully.
+#
+# Process finished with exit code 0
+#
+#
+# '''
+

@@ -49,27 +49,27 @@ if __name__ == '__main__':
     a = ConnectToCamera()
     a.main()
 
-'''
-D:\Anaconda3\envs\Mech-Eye\python.exe G:\mecheye_python_samples\area_scan_3d_camera\basic\connect_to_camera.py 
-Discovering all available cameras...
-Camera index : 0
-.............................
-Camera Model Name:           Mech-Eye PRO M
-Camera Serial Number:        NEM12238A4130015
-Camera IP Address:           169.254.7.42
-Camera Subnet Mask:          255.255.0.0
-Camera IP Assignment Method: LLA
-Hardware Version:            V4.1.0
-Firmware Version:            V2.4.0
-.............................
-
-Please enter the index of the camera that you want to connect: 
-0
-Connected to the camera successfully.
-Disconnected from the camera successfully.
-
-Process finished with exit code 0
-
-
-
-'''
+# '''
+# D:\Anaconda3\envs\Mech-Eye\python.exe G:\mecheye_python_samples\area_scan_3d_camera\basic\connect_to_camera.py
+# Discovering all available cameras...
+# Camera index : 0
+# .............................
+# Camera Model Name:           Mech-Eye PRO M
+# Camera Serial Number:        NEM12238A4130015
+# Camera IP Address:           169.254.7.42
+# Camera Subnet Mask:          255.255.0.0
+# Camera IP Assignment Method: LLA
+# Hardware Version:            V4.1.0
+# Firmware Version:            V2.4.0
+# .............................
+#
+# Please enter the index of the camera that you want to connect:
+# 0
+# Connected to the camera successfully.
+# Disconnected from the camera successfully.
+#
+# Process finished with exit code 0
+#
+#
+#
+# '''

@@ -60,6 +60,7 @@
 				"X" : 0,
 				"Y" : 0
 			},
+			"UnsavedProperties" : [],
 			"objectName" : "default"
 		},
 		{
@@ -121,6 +122,7 @@
 				"X" : 0,
 				"Y" : 0
 			},
+			"UnsavedProperties" : [],
 			"objectName" : "calib"
 		},
 		{
@@ -182,6 +184,7 @@
 				"X" : 0,
 				"Y" : 0
 			},
+			"UnsavedProperties" : [],
 			"objectName" : "Reflective object"
 		},
 		{
@@ -243,6 +246,7 @@
 				"X" : 0,
 				"Y" : 0
 			},
+			"UnsavedProperties" : [],
 			"objectName" : "Translucent object"
 		},
 		{
@@ -304,6 +308,7 @@
 				"X" : 0,
 				"Y" : 0
 			},
+			"UnsavedProperties" : [],
 			"objectName" : "Reflective + unreflective"
 		},
 		{
@@ -365,6 +370,7 @@
 				"X" : 0,
 				"Y" : 0
 			},
+			"UnsavedProperties" : [],
 			"objectName" : "Reflective metal"
 		},
 		{
@@ -426,14 +432,15 @@
 				"X" : 0,
 				"Y" : 0
 			},
+			"UnsavedProperties" : [],
 			"objectName" : "Small carton"
 		},
 		{
 			"AntiFlickerMode" : 0,
 			"DepthRange" : 
 			[
-				200,
-				4000
+				100,
+				1000
 			],
 			"DistortionCorrection" : 3,
 			"EnableDistortionCorrection" : false,
@@ -487,7 +494,11 @@
 				"X" : 0,
 				"Y" : 0
 			},
-			"UnsavedProperties" : [],
+			"UnsavedProperties" : 
+			[
+				"DepthLowerLimit",
+				"DepthUpperLimit"
+			],
 			"objectName" : "NewUserSet",
 			"templateName" : "calib"
 		}

@@ -36,3 +36,29 @@ class SaveAndLoadUserSet(object):
 if __name__ == '__main__':
     a = SaveAndLoadUserSet()
     a.main()
+
+# '''
+# D:\Anaconda3\envs\Mech-Eye\python.exe G:\mecheye_python_samples\area_scan_3d_camera\util\save_and_load_user_set.py
+# Find Mech-Eye Industrial 3D Cameras...
+# Mech-Eye device index : 0
+# .............................
+# Camera Model Name:           Mech-Eye PRO M
+# Camera Serial Number:        NEM12238A4130015
+# Camera IP Address:           169.254.7.42
+# Camera Subnet Mask:          255.255.0.0
+# Camera IP Assignment Method: LLA
+# Hardware Version:            V4.1.0
+# Firmware Version:            V2.4.0
+# .............................
+#
+# Please enter the device index you want to connect:
+# 0
+# Connect Mech-Eye Industrial 3D Camera Successfully.
+# All user sets: default calib Reflective object Translucent object Reflective + unreflective Reflective metal Small carton NewUserSet Save all user sets to a JSON file.
+# Import and replace all user sets from a JSON file.
+# Disconnected from the camera successfully.
+#
+# Process finished with exit code 0
+#
+#
+# '''

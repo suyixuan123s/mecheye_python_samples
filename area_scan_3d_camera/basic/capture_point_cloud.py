@@ -16,14 +16,14 @@ class CapturePointCloud(object):
         self.frame_all_2d_3d = Frame2DAnd3D()
 
     def capture_point_cloud(self):
-        point_cloud_file = "PointCloud.ply"
+        point_cloud_file = "dataset/PointCloud.ply"
         show_error(
             self.frame_all_2d_3d.frame_3d().save_untextured_point_cloud(FileFormat_PLY, point_cloud_file))
         print("Capture and save the untextured point cloud: {}.".format(
             point_cloud_file))
 
     def capture_textured_point_cloud(self):
-        textured_point_cloud_file = "TexturedPointCloud.ply"
+        textured_point_cloud_file = "dataset/TexturedPointCloud.ply"
         show_error(self.frame_all_2d_3d.save_textured_point_cloud(FileFormat_PLY,
                                                                   textured_point_cloud_file))
         print("Capture and save the textured point cloud: {}".format(
@@ -44,30 +44,30 @@ if __name__ == '__main__':
     a = CapturePointCloud()
     a.main()
 
-'''
-D:\Anaconda3\envs\Mech-Eye\python.exe G:\mecheye_python_samples\area_scan_3d_camera\basic\capture_point_cloud.py 
-Find Mech-Eye Industrial 3D Cameras...
-Mech-Eye device index : 0
-.............................
-Camera Model Name:           Mech-Eye PRO M
-Camera Serial Number:        NEM12238A4130015
-Camera IP Address:           169.254.7.42
-Camera Subnet Mask:          255.255.0.0
-Camera IP Assignment Method: LLA
-Hardware Version:            V4.1.0
-Firmware Version:            V2.4.0
-.............................
-
-Please enter the device index you want to connect: 
-0
-Connect Mech-Eye Industrial 3D Camera Successfully.
-Do you want the camera to capture 3D image ? Please input y/n to confirm: 
-y
-Capture and save the untextured point cloud: PointCloud.ply.
-Capture and save the textured point cloud: TexturedPointCloud.ply
-Disconnected from the camera successfully.
-
-Process finished with exit code 0
-
-
-'''
+# '''
+# D:\Anaconda3\envs\Mech-Eye\python.exe G:\mecheye_python_samples\area_scan_3d_camera\basic\capture_point_cloud.py
+# Find Mech-Eye Industrial 3D Cameras...
+# Mech-Eye device index : 0
+# .............................
+# Camera Model Name:           Mech-Eye PRO M
+# Camera Serial Number:        NEM12238A4130015
+# Camera IP Address:           169.254.7.42
+# Camera Subnet Mask:          255.255.0.0
+# Camera IP Assignment Method: LLA
+# Hardware Version:            V4.1.0
+# Firmware Version:            V2.4.0
+# .............................
+#
+# Please enter the device index you want to connect:
+# 0
+# Connect Mech-Eye Industrial 3D Camera Successfully.
+# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# y
+# Capture and save the untextured point cloud: PointCloud.ply.
+# Capture and save the textured point cloud: TexturedPointCloud.ply
+# Disconnected from the camera successfully.
+#
+# Process finished with exit code 0
+#
+#
+# '''
