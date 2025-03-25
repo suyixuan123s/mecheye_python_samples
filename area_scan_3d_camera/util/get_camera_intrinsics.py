@@ -15,6 +15,9 @@ class GetCameraIntrinsics(object):
         show_error(self.camera.get_camera_intrinsics(self.intrinsics))
         print_camera_intrinsics(self.intrinsics)
 
+
+
+
     def main(self):
         if find_and_connect(self.camera):
             self.get_device_intrinsic()

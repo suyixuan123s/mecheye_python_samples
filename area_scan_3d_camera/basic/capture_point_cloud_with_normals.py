@@ -15,7 +15,7 @@ class CapturePointCloudWithNormals(object):
     # 计算相机上点的法线，并将包含法线的点云保存到文件
 
     def capture_point_cloud_with_normals_calculated_on_camera(self):
-        point_cloud_file = "dataset/PointCloud_1.ply"
+        point_cloud_file = "dataset/PointCloud_111.ply"
         if self.camera.capture_3d_with_normal(self.frame_3d).is_ok():
             show_error(
                 self.frame_3d.save_untextured_point_cloud_with_normals(FileFormat_PLY, point_cloud_file))
@@ -30,7 +30,7 @@ class CapturePointCloudWithNormals(object):
     # 计算电脑上点的法线，并将包含法线的点云保存到文件
 
     def capture_point_cloud_with_normals_calculated_locally(self):
-        point_cloud_file = "dataset/PointCloud_2.ply"
+        point_cloud_file = "dataset/PointCloud_222.ply"
         if self.camera.capture_3d(self.frame_3d).is_ok():
             show_error(
                 self.frame_3d.save_untextured_point_cloud_with_normals(FileFormat_PLY, point_cloud_file))

@@ -2,12 +2,9 @@
 Author: Yixuan Su
 Date: 2024/11/18 13:56
 File: Visualization_point_cloud.py
-
 """
 
 import open3d as o3d
-
-
 def view_point_cloud(file_path):
     # 加载点云文件
     point_cloud = o3d.io.read_point_cloud(file_path)

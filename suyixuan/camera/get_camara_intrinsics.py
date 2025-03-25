@@ -14,8 +14,8 @@ config = rs.config()  # 定义配置config
 # config.enable_stream(rs.stream.color, 848, 480, rs.format.bgr8, 30)  # 配置color流
 
 
-config.enable_stream(rs.stream.depth, 1280, 720, rs.format.z16, 30)  # 配置depth流
-config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30)  # 配置color流
+config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)  # 配置depth流
+config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)  # 配置color流
 
 
 profile = pipeline.start(config)  # 流程开始4
@@ -66,22 +66,22 @@ def get_aligned_images():
                           }
 
     # 保存内参到本地
-    with open('intr7insics1.json', 'w') as fp:
+    with open('Dataset_640_480/intr7insics1.json', 'w') as fp:
         json.dump(camera_parameters1, fp)
     #######################################################
 
     # 保存内参到本地
-    with open('intr7insics2.json', 'w') as fp:
+    with open('Dataset_640_480/intr7insics2.json', 'w') as fp:
         json.dump(camera_parameters2, fp)
     #######################################################
 
     # 保存内参到本地
-    with open('intr7insics3.json', 'w') as fp:
+    with open('Dataset_640_480/intr7insics3.json', 'w') as fp:
         json.dump(camera_parameters3, fp)
     #######################################################
 
     # 保存内参到本地
-    with open('intr7insics4.json', 'w') as fp:
+    with open('Dataset_640_480/intr7insics4.json', 'w') as fp:
         json.dump(camera_parameters4, fp)
     #######################################################
 

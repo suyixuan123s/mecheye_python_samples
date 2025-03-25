@@ -24,7 +24,7 @@ def view_point_cloud(file_path):
 # 用法示例
 if __name__ == "__main__":
     # 指定点云文件路径
-    file_path = r'G:\mecheye_python_samples\area_scan_3d_camera\basic\dataset\PointCloud.ply'
+    file_path = r'E:\ABB-Project\mecheye_python_samples\area_scan_3d_camera\basic\dataset\TexturedPointCloud.ply'
 
     # 查看点云
     view_point_cloud(file_path)
