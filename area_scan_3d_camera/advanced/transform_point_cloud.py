@@ -66,7 +66,7 @@ class TransformPointCloud(object):
                 return
             show_error(self.camera.capture_2d_and_3d(self.frame_all_2d_3d))
             transformation = get_transformation_params(self.camera)
-            # Obtain the rigid body transformation from the camera reference frame to the custom reference
+            # Obtain the rigid body transformation from the Stereo_Camera reference frame to the custom reference
             # frame
             # The custom reference frame can be adjusted using the "Custom Reference Frame" tool in
             # Mech-Eye Viewer. The rigid body transformations are automatically calculated after the
@@ -79,7 +79,7 @@ class TransformPointCloud(object):
             self.get_transformed_point_cloud_with_normals()
             self.get_transformed_textured_point_cloud_with_normals()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':

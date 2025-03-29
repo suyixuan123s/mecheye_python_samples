@@ -32,7 +32,7 @@ class SetParametersOfUHPCameras(object):
         if find_and_connect(self.camera):
             self.set_uhp_capture_mode()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':

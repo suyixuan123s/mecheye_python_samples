@@ -1,4 +1,4 @@
-# With this sample, you can connect to a camera and obtain the 2D image, depth map, and point cloud data.
+# With this sample, you can connect to a Stereo_Camera and obtain the 2D image, depth map, and point cloud data.
 # 通过该示例，您可以连接摄像头，获取二维图像、深度图和点云数据。
 
 
@@ -13,7 +13,7 @@ class ConnectAndCaptureImages(object):
 
     def connect_and_capture(self):
 
-        # Obtain the 2D image resolution and the depth map resolution of the camera.
+        # Obtain the 2D image resolution and the depth map resolution of the Stereo_Camera.
         resolution = CameraResolutions()
         show_error(self.camera.get_camera_resolutions(resolution))
         print_camera_resolution(resolution)
@@ -51,11 +51,11 @@ class ConnectAndCaptureImages(object):
               format(row, col, point_xyz.x, point_xyz.y, point_xyz.z))
 
     def main(self):
-        # List all available cameras and connect to a camera by the displayed index.
+        # List all available cameras and connect to a Stereo_Camera by the displayed index.
         if find_and_connect(self.camera):
             self.connect_and_capture()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -84,7 +84,7 @@ if __name__ == '__main__':
 # The size of the 2D image is 1920 (width) * 1200 (height).
 # The RGB values of the pixel at (222,222) is R:58,G:58,B58
 #
-# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# Do you want the Stereo_Camera to capture 3D image ? Please input y/n to confirm:
 # y
 # The size of the depth map is 1920 (width) * 1200 (height).
 # The depth value of the pixel at (222,222) is depth :1230.2919921875mm
@@ -92,7 +92,7 @@ if __name__ == '__main__':
 # The size of the point cloud is 1920 (width) * 1200 (height).
 # The coordinates of the point corresponding to the pixel at (222,222) is X: -374.20965576171875mm , Y: -208.33644104003906mm, Z: 1230.2919921875mm
 #
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

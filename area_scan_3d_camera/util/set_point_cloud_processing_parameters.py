@@ -11,7 +11,7 @@ class SetPointCloudProcessingParameters(object):
         self.camera = Camera()
 
     def set_point_cloud_processing_parameters(self):
-        # Obtain the basic information of the connected camera.
+        # Obtain the basic information of the connected Stereo_Camera.
         cameraInfo = CameraInfo()
         show_error(self.camera.get_camera_info(cameraInfo))
         print_camera_info(cameraInfo)
@@ -84,7 +84,7 @@ class SetPointCloudProcessingParameters(object):
         if find_and_connect(self.camera):
             self.set_point_cloud_processing_parameters()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -125,7 +125,7 @@ if __name__ == '__main__':
 # Point Cloud Edge Preservation: Normal (0: Sharp, 1: Normal, 2: Smooth)
 #
 # Save the current parameter settings to the selected user set..
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

@@ -1,4 +1,4 @@
-# With this sample, you can calculate normals and save the point cloud with normals. The normals can be calculated on the camera or the computer.
+# With this sample, you can calculate normals and save the point cloud with normals. The normals can be calculated on the Stereo_Camera or the computer.
 # 通过此示例，您可以计算法线并保存包含法线的点云。可以在相机或计算机上计算法线。
 
 from mecheye.shared import *
@@ -11,7 +11,7 @@ class CapturePointCloudWithNormals(object):
         self.camera = Camera()
         self.frame_3d = Frame3D()
 
-    # Calculate the normals of the points on the camera and save the point cloud with normals to file
+    # Calculate the normals of the points on the Stereo_Camera and save the point cloud with normals to file
     # 计算相机上点的法线，并将包含法线的点云保存到文件
 
     def capture_point_cloud_with_normals_calculated_on_camera(self):
@@ -23,7 +23,7 @@ class CapturePointCloudWithNormals(object):
         else:
             print("Failed to capture the point cloud.")
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
             return False
 
     # Calculate the normals of the points on the computer and save the point cloud with normals to file
@@ -38,7 +38,7 @@ class CapturePointCloudWithNormals(object):
         else:
             print("Failed to capture the point cloud.")
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
             return False
 
     def main(self):
@@ -50,7 +50,7 @@ class CapturePointCloudWithNormals(object):
             if not self.capture_point_cloud_with_normals_calculated_locally():
                 return
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -75,9 +75,9 @@ if __name__ == '__main__':
 # Please enter the device index you want to connect:
 # 0
 # Connect Mech-Eye Industrial 3D Camera Successfully.
-# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# Do you want the Stereo_Camera to capture 3D image ? Please input y/n to confirm:
 # y
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

@@ -1,4 +1,4 @@
-# With this sample program, you can set the range of depth values to be retained by a camera.
+# With this sample program, you can set the range of depth values to be retained by a Stereo_Camera.
 # 通过此示例程序，您可以设置相机保留的深度值范围。
 
 from mecheye.shared import *
@@ -23,7 +23,7 @@ class SetDepthRange(object):
         if find_and_connect(self.camera):
             self.set_depth_range()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -51,7 +51,7 @@ if __name__ == '__main__':
 #
 # 3D scanning depth lower limit : 100 mm, depth upper limit : 1000 mm
 #
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

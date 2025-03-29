@@ -58,7 +58,7 @@ class ConvertDepthMapToPointCloud(object):
         if find_and_connect(self.camera):
             self.capture_cloud_from_depth()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -92,10 +92,10 @@ if __name__ == '__main__':
 # Firmware Version:            V2.4.0
 # .............................
 #
-# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# Do you want the Stereo_Camera to capture 3D image ? Please input y/n to confirm:
 # y
 # The point cloud contains: 2304000 data points.
 # Save the point cloud to file: G:/mecheye_python_samples/area_scan_3d_camera/advanced/dataset\UntexturedPointCloud.ply
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0

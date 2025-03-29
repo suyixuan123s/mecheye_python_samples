@@ -36,7 +36,7 @@ class CapturePointCloudHDR(object):
             show_error(self.camera.capture_2d_and_3d(self.frame_2d_and_3d))
             self.capture_point_cloud_hdr()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -62,11 +62,11 @@ if __name__ == '__main__':
 # Please enter the device index you want to connect:
 # 0
 # Connect Mech-Eye Industrial 3D Camera Successfully.
-# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# Do you want the Stereo_Camera to capture 3D image ? Please input y/n to confirm:
 # y
 # Capture and save the untextured point cloud to PointCloud.ply.
 # Capture and save the textured point cloud to TexturedPointCloud.ply
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

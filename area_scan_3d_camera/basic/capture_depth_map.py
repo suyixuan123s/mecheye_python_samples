@@ -28,7 +28,7 @@ class CaptureDepthMap(object):
                 return
             self.capture_depth_map()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -53,10 +53,10 @@ if __name__ == '__main__':
 # Please enter the device index you want to connect:
 # 0
 # Connect Mech-Eye Industrial 3D Camera Successfully.
-# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# Do you want the Stereo_Camera to capture 3D image ? Please input y/n to confirm:
 # y
 # Capture and save the depth map: DepthMap.tiff
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

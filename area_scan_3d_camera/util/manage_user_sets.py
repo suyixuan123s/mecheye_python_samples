@@ -43,7 +43,7 @@ class ManageUserSets(object):
         if find_and_connect(self.camera):
             self.manage_user_set()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -73,7 +73,7 @@ if __name__ == '__main__':
 # Add a new user set : "NewUserSet".
 # select "NewUserSet" as the current user set.
 # Save all parameters to current user set.
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

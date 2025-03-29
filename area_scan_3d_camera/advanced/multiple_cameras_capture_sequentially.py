@@ -5,9 +5,7 @@
 
 
 import os
-
 import cv2
-
 from mecheye.shared import *
 from mecheye.area_scan_3d_camera import *
 from mecheye.area_scan_3d_camera_utils import *
@@ -62,7 +60,7 @@ class MultipleCamerasCaptureSequentially(object):
             print("Capture and save the textured point cloud:", point_cloud_file)
 
             camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
     def main(self):
         self.connect_device_and_capture()
@@ -92,7 +90,7 @@ if __name__ == '__main__':
 # Please enter the device index you want to connect:
 # Enter the character 'c' to terminate adding devices
 # c
-# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# Do you want the Stereo_Camera to capture 3D image ? Please input y/n to confirm:
 # y
 # .............................
 # Camera Model Name:           Mech-Eye PRO M
@@ -108,6 +106,6 @@ if __name__ == '__main__':
 # Capture and save the 2D image: 2DImage_NEM12238A4130015.png
 # Capture and save the depth map: DepthMap_NEM12238A4130015.png
 # Capture and save the textured point cloud: TexturedPointCloud_NEM12238A4130015ply
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0

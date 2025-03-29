@@ -30,7 +30,7 @@ class SaveAndLoadUserSet(object):
         if find_and_connect(self.camera):
             self.save_and_load_user_set()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -56,7 +56,7 @@ if __name__ == '__main__':
 # Connect Mech-Eye Industrial 3D Camera Successfully.
 # All user sets: default calib Reflective object Translucent object Reflective + unreflective Reflective metal Small carton NewUserSet Save all user sets to a JSON file.
 # Import and replace all user sets from a JSON file.
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

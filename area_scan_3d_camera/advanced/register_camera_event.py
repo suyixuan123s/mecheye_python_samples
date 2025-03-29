@@ -1,4 +1,4 @@
-# With this sample, you can define and register the callback function for monitoring the camera connection status.
+# With this sample, you can define and register the callback function for monitoring the Stereo_Camera connection status.
 # 通过该示例，您可以定义并注册用于监控相机连接状态的回调函数。
 import os
 
@@ -23,7 +23,7 @@ class CustomCallback(EventCallbackBase):
 
     def process_event(self, eventData):
         print(
-            "A camera event has occurred. The event ID is {0}.".format(eventData.event_id))
+            "A Stereo_Camera event has occurred. The event ID is {0}.".format(eventData.event_id))
 
 
 class RegisterCameraEvent(object):
@@ -58,7 +58,7 @@ class RegisterCameraEvent(object):
 
         device_event = CameraEvent()
         callback = CustomCallback()
-        print("Register the callback function for camera exposure end event.")
+        print("Register the callback function for Stereo_Camera exposure end event.")
         # CameraEvent 是一个事件类，用于处理相机事件。
         # register_camera_event_callback 方法注册回调函数
         # 这里注册了当相机曝光结束时触发的事件（CAMERA_EVENT_EXPOSURE_END），
@@ -71,14 +71,14 @@ class RegisterCameraEvent(object):
 
         # 注册并监听相机断开连接事件（CAMERA_EVENT_DISCONNECTED）。
         # 此事件会在相机断开时触发，回调函数 CustomCallback 会被调用。
-        print("Register the callback function for camera disconnection event.")
+        print("Register the callback function for Stereo_Camera disconnection event.")
         show_error(
             device_event.register_camera_event_callback(self.camera, CameraEvent.CAMERA_EVENT_DISCONNECTED, callback))
         time.sleep(20)
         show_error(device_event.unregister_camera_event_callback(self.camera, CameraEvent.CAMERA_EVENT_DISCONNECTED))
 
         self.camera.disconnect()
-        print("Disconnected from the camera successfully.")
+        print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -101,13 +101,13 @@ if __name__ == '__main__':
 # Please enter the device index you want to connect:
 # 0
 # Connect Mech-Eye Industrial 3D Camera Successfully.
-# Register the callback function for camera exposure end event.
+# Register the callback function for Stereo_Camera exposure end event.
 # Successfully registered the callback function for the following event: 36878.
 # The message channel for delivering the events of this device has been established at 169.254.194.154:48001.
-# A camera event has occurred. The event ID is 36878.
+# A Stereo_Camera event has occurred. The event ID is 36878.
 # Capture and save the depth map: G:\mecheye_python_samples\area_scan_3d_camera\advanced\dataset\DepthMap.tiff
-# Register the callback function for camera disconnection event.
+# Register the callback function for Stereo_Camera disconnection event.
 #
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0

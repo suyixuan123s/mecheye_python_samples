@@ -22,27 +22,27 @@ class ConnectToCamera(object):
             print("Camera index :", i)
             print_camera_info(camera_infos[i])
 
-        print("Please enter the index of the camera that you want to connect: ")
+        print("Please enter the index of the Stereo_Camera that you want to connect: ")
         input_index = 0
 
-        # Enter the index of the camera to be connected and check if the index is valid.
+        # Enter the index of the Stereo_Camera to be connected and check if the index is valid.
         while True:
             input_index = input()
             if input_index.isdigit() and 0 <= int(input_index) < len(camera_infos):
                 input_index = int(input_index)
                 break
             print(
-                "Input invalid! Please enter the index of the camera that you want to connect: ")
+                "Input invalid! Please enter the index of the Stereo_Camera that you want to connect: ")
 
         error_status = self.camera.connect(camera_infos[input_index])
         if not error_status.is_ok():
             show_error(error_status)
             return
 
-        print("Connected to the camera successfully.")
+        print("Connected to the Stereo_Camera successfully.")
 
         self.camera.disconnect()
-        print("Disconnected from the camera successfully.")
+        print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -63,10 +63,10 @@ if __name__ == '__main__':
 # Firmware Version:            V2.4.0
 # .............................
 #
-# Please enter the index of the camera that you want to connect:
+# Please enter the index of the Stereo_Camera that you want to connect:
 # 0
-# Connected to the camera successfully.
-# Disconnected from the camera successfully.
+# Connected to the Stereo_Camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

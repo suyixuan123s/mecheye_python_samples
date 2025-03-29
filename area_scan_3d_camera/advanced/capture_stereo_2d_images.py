@@ -2,9 +2,7 @@
 # 通过该示例，您可以获取并保存立体二维图像。
 
 import os.path
-
 import cv2
-
 from mecheye.shared import *
 from mecheye.area_scan_3d_camera import *
 from mecheye.area_scan_3d_camera_utils import find_and_connect
@@ -57,7 +55,7 @@ class CaptureStereo2DImages(object):
         if find_and_connect(self.camera):
             self.capture_stereo_2d_images()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':

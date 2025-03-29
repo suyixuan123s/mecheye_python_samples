@@ -28,7 +28,7 @@ class Capture2DImage(object):
         if find_and_connect(self.camera):
             self.capture_2d_image()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -53,7 +53,7 @@ if __name__ == '__main__':
 # 0
 # Connect Mech-Eye Industrial 3D Camera Successfully.
 # Capture and save the 2D image: 2DImage.png
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

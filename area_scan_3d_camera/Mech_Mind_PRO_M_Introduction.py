@@ -1,7 +1,7 @@
 """
 Author: Yixuan Su
 Date: 2024/12/15 11:04
-File: introduction.py
+File: Mech_Mind_PRO_M_Introduction.py
 Description:
 """
 

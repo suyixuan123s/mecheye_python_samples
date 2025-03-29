@@ -176,7 +176,7 @@ class TransformPointCloud(object):
         if self.profile_batch.check_flag(ProfileBatch.BatchFlag_Incomplete):
             print("Part of the batch's data is lost, the number of valid profiles is:",
                   self.profile_batch.valid_height())
-        # Obtain the rigid body transformation from the camera reference frame to the custom reference
+        # Obtain the rigid body transformation from the Stereo_Camera reference frame to the custom reference
         # frame
         # The custom reference frame can be adjusted using the "Custom Reference Frame" tool in
         # Mech-Eye Viewer. The rigid body transformations are automatically calculated after the

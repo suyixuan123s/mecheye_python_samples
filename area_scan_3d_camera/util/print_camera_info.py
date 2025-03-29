@@ -1,4 +1,4 @@
-# With this sample, you can obtain and print the camera information, such as model, serial number, firmware version, and temperatures.
+# With this sample, you can obtain and print the Stereo_Camera information, such as model, serial number, firmware version, and temperatures.
 # 通过此示例，您可以获取并打印相机信息，例如型号、序列号、固件版本和温度。
 
 from mecheye.shared import *
@@ -22,7 +22,7 @@ class PrintCameraInfo(object):
         if find_and_connect(self.camera):
             self.print_device_info()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -63,7 +63,7 @@ if __name__ == '__main__':
 # Projector Module:   28.0°C
 # ............................
 #
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

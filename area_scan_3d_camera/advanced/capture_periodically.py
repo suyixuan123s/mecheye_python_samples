@@ -1,5 +1,5 @@
 # With this sample, you can obtain and save 2D images, depth maps and point clouds
-# periodically for the specified duration from a camera.
+# periodically for the specified duration from a Stereo_Camera.
 # 在指定的时间内定期从相机获取。
 
 import os
@@ -10,7 +10,7 @@ from mecheye.shared import *
 from mecheye.area_scan_3d_camera import *
 from mecheye.area_scan_3d_camera_utils import *
 
-# Set the camera capture interval to 10 seconds and the total duration of image capturing to 5 minutes.
+# Set the Stereo_Camera capture interval to 10 seconds and the total duration of image capturing to 5 minutes.
 capture_time = 5  # minutes
 capture_period = 10  # seconds
 
@@ -80,7 +80,7 @@ class CapturePeriodically(object):
                 return
             self.capture_timed_and_periodically()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -104,7 +104,7 @@ if __name__ == '__main__':
 # Please enter the device index you want to connect:
 # 0
 # Connect Mech-Eye Industrial 3D Camera Successfully.
-# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# Do you want the Stereo_Camera to capture 3D image ? Please input y/n to confirm:
 # y
 # Start capturing.
 # Paused capturing.

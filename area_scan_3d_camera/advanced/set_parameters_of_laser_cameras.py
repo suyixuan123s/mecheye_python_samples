@@ -99,7 +99,7 @@ class SetParametersOfLaserCameras(object):
             self.set_laser_frame_range()
             self.set_laser_partition_count()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':

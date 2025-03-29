@@ -12,7 +12,7 @@ class SetScanningParameters(object):
 
     def set_scanning_parameters(self):
 
-        # Obtain the basic information of the connected camera.
+        # Obtain the basic information of the connected Stereo_Camera.
         cameraInfo = CameraInfo()
         show_error(self.camera.get_camera_info(cameraInfo))
         print_camera_info(cameraInfo)
@@ -123,7 +123,7 @@ class SetScanningParameters(object):
         if find_and_connect(self.camera):
             self.set_scanning_parameters()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -170,7 +170,7 @@ if __name__ == '__main__':
 # 2D scanning exposure mode enum: Timed, exposure time: 100.0
 #
 # Save the current parameter settings to the selected user set.
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

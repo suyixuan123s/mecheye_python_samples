@@ -1,4 +1,4 @@
-# With this sample, you can obtain and print the camera intrinsic parameters.
+# With this sample, you can obtain and print the Stereo_Camera intrinsic parameters.
 # 通过此示例，您可以获取并打印相机固有参数。
 
 from mecheye.shared import *
@@ -22,7 +22,7 @@ class GetCameraIntrinsics(object):
         if find_and_connect(self.camera):
             self.get_device_intrinsic()
             self.camera.disconnect()
-            print("Disconnected from the camera successfully.")
+            print("Disconnected from the Stereo_Camera successfully.")
 
 
 if __name__ == '__main__':
@@ -71,7 +71,7 @@ if __name__ == '__main__':
 # Translation From Depth Camera to Texture Camera:
 #     X: 0.0mm, Y: 0.0mm, Z: 0.0mm
 #
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
 #

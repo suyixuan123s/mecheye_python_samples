@@ -4,10 +4,8 @@
 # 同时从多个摄像机获取。
 
 import os
-
 import cv2
 import threading
-
 from mecheye.shared import *
 from mecheye.area_scan_3d_camera import *
 from mecheye.area_scan_3d_camera_utils import *
@@ -50,7 +48,7 @@ class CaptureThread(threading.Thread):
         print("Capture and save the textured point cloud:", point_cloud_file)
 
         self.camera.disconnect()
-        print("Disconnected from the camera successfully.")
+        print("Disconnected from the Stereo_Camera successfully.")
 
 
 class MultipleCamerasCaptureSimultaneously(object):
@@ -101,12 +99,12 @@ if __name__ == '__main__':
 # Please enter the device index you want to connect:
 # Enter the character 'c' to terminate adding devices
 # c
-# Do you want the camera to capture 3D image ? Please input y/n to confirm:
+# Do you want the Stereo_Camera to capture 3D image ? Please input y/n to confirm:
 # y
 # Camera 169.254.7.42 start capturing.
 # Capture and save the 2D image: G:\mecheye_python_samples\area_scan_3d_camera\advanced\dataset\2DImage_NEM12238A4130015.png
 # Capture and save the depth map: G:\mecheye_python_samples\area_scan_3d_camera\advanced\dataset\DepthMap_NEM12238A4130015.png
 # Capture and save the textured point cloud: G:\mecheye_python_samples\area_scan_3d_camera\advanced\dataset\TexturedPointCloud_NEM12238A4130015ply
-# Disconnected from the camera successfully.
+# Disconnected from the Stereo_Camera successfully.
 #
 # Process finished with exit code 0
